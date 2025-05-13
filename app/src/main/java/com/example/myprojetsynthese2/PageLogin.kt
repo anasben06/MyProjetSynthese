@@ -49,7 +49,7 @@ class PageLogin : AppCompatActivity() {
         sLangue.adapter = adapter
 
         // Initialiser le Spinner avec la langue actuelle
-        sLangue.setSelection(if (Locale.getDefault().language == "ar") 0 else 1)
+        sLangue.setSelection(if (intent.getStringExtra("selectedLangCode") == "ar") 0 else 1)
 
         // Listener du Spinner
         sLangue.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
@@ -68,9 +68,11 @@ class PageLogin : AppCompatActivity() {
 
         // Aller a l'activite principale MainActivity
         btnLogin.setOnClickListener {
-            //val selectedLangCode = if (sLangue.selectedItemPosition == 0) "ar" else "en"
-            val intet = Intent(this, MainActivity::class.java)
-            startActivity(intet)
+
+            val selectedLangCode = if (sLangue.selectedItemPosition == 0) "ar" else "en"
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("selectedLangCode", selectedLangCode)
+            startActivity(intent)
 
             finish()
         }
@@ -92,11 +94,17 @@ class PageLogin : AppCompatActivity() {
         Locale.setDefault(locale)
 
         val config = Configuration()
-        config.setLocale(locale)
-        config.setLayoutDirection(locale)
-        baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
 
-        // Redémarre l'activité pour appliquer le changement
+
+        val localeWithLatinNumbers = Locale.Builder()
+            .setLocale(locale)
+            //.setUnicodeLocaleKeyword("nu", "latn")
+            .build()
+
+        config.setLocale(localeWithLatinNumbers)
+        config.setLayoutDirection(localeWithLatinNumbers)
+
+        baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
         recreate()
     }
 }

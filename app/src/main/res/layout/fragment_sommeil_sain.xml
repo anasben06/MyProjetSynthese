@@ -72,6 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
+
                 android:timePickerMode="spinner" />
 
             <Button
@@ -90,7 +91,7 @@
             android:id="@+id/clSommeil_2_fragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"
+            android:visibility="visible"
             android:background="@drawable/bg_card"
             android:layout_marginTop="20dp"
             app:layout_constraintTop_toBottomOf="@id/lySommeil_1_fragment"

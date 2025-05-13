@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
         // Spinner des langues
         val adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, listOfLanguage)
         sLangue.adapter = adapter
+//        Toast.makeText(this, sLangue.selectedItem.toString() , Toast.LENGTH_SHORT).show()
 
         // Afficher fragment sommeil sain par défaut
         supportFragmentManager.beginTransaction().apply {
@@ -106,7 +107,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Initialiser le Spinner avec la langue actuelle
-        sLangue.setSelection(if (Locale.getDefault().language == "ar") 0 else 1)
+//        sLangue.setSelection(if (Locale.getDefault().language == "ar") 0 else 1)
+          sLangue.setSelection(if (intent.getStringExtra("selectedLangCode") == "ar") 0 else 1)
 
         // Listener du Spinner
         sLangue.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
@@ -120,6 +122,8 @@ class MainActivity : AppCompatActivity() {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         })
+
+//        Toast.makeText(this, intent.getStringExtra("selectedLangCode"), Toast.LENGTH_SHORT).show()
     }
 
 
@@ -146,10 +150,17 @@ class MainActivity : AppCompatActivity() {
         Locale.setDefault(locale)
 
         val config = Configuration()
-        config.setLocale(locale)
-        config.setLayoutDirection(locale)
+
+
+        val localeWithLatinNumbers = Locale.Builder()
+            .setLocale(locale)
+            //.setUnicodeLocaleKeyword("nu", "latn")
+            .build()
+
+        config.setLocale(localeWithLatinNumbers)
+        config.setLayoutDirection(localeWithLatinNumbers)
 
         baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
-        recreate() // Redémarre l'activité pour appliquer le changement
+        recreate()
     }
 }

@@ -41,6 +41,7 @@ class FragmentSommeilSain : Fragment() {
         texteHeureCoucher = view.findViewById(R.id.tvHeureCoucherConsecutive_Fragment)
         timePickerReveil.setIs24HourView(true)
 
+
         //
         cyclesTextes = listOf(
             view.findViewById(R.id.tvCoucher1_fragment),

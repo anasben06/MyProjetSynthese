@@ -46,7 +46,7 @@ class PageInscription : AppCompatActivity() {
         sLangue.adapter = adapter
 
         // Initialiser le Spinner avec la langue actuelle
-        sLangue.setSelection(if (Locale.getDefault().language == "ar") 0 else 1)
+        sLangue.setSelection(if (intent.getStringExtra("selectedLangCode") == "ar") 0 else 1)
 
         // Listener du Spinner
         sLangue.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
@@ -87,10 +87,17 @@ class PageInscription : AppCompatActivity() {
         Locale.setDefault(locale)
 
         val config = Configuration()
-        config.setLocale(locale)
-        config.setLayoutDirection(locale)
+
+
+        val localeWithLatinNumbers = Locale.Builder()
+            .setLocale(locale)
+            //.setUnicodeLocaleKeyword("nu", "latn")
+            .build()
+
+        config.setLocale(localeWithLatinNumbers)
+        config.setLayoutDirection(localeWithLatinNumbers)
 
         baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
-        recreate() // Redémarre l'activité pour appliquer le changement
+        recreate()
     }
 }
