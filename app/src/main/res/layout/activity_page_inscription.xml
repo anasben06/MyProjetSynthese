@@ -23,9 +23,10 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/world"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
@@ -33,7 +34,7 @@
                 android:layout_width="115dp"
                 android:layout_height="24dp"
                 app:layout_constraintBottom_toBottomOf="@+id/ivLangue"
-                app:layout_constraintEnd_toStartOf="@+id/ivLangue"
+                app:layout_constraintStart_toEndOf="@+id/ivLangue"
                 app:layout_constraintTop_toTopOf="@+id/ivLangue" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

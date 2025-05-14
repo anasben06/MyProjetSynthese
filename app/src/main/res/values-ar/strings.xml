@@ -40,14 +40,14 @@
     <string name="calculateur_sommeil_sain">حاسبة النوم الصحي</string>
     <string name="description_sommeil_sain">احسب وقت النوم المثالي بناءً على عمرك ووقت استيقاظك.</string>
     <string name="label_age">العمر</string>
-    <string name="hint_age_exemple">مثلاً، 30</string>
+    <string name="hint_age_exemple">مثلاً، ٣٠</string>
     <string name="label_heure_reveil">وقت الاستيقاظ</string>
     <string name="btn_calculer_sommeil">حساب جدول النوم</string>
     <string name="titre_tableau_sommeil">🛌 جدول نومك</string>
     <string name="label_duree_recommandee">مدة النوم الموصى بها:</string>
     <string name="label_heure_coucher">وقت النوم المثالي:</string>
     <string name="titre_cycles_sommeil">⏰ أوقات الاستيقاظ حسب دورات النوم</string>
-    <string name="explication_cycles">إذا لم تتمكن من الحصول على ليلة نوم كاملة، حاول الاستيقاظ في هذه الأوقات لتشعر بنشاط (كل دورة نوم مدتها 90 دقيقة):</string>
+    <string name="explication_cycles">إذا لم تتمكن من الحصول على ليلة نوم كاملة، حاول الاستيقاظ في هذه الأوقات لتشعر بنشاط (كل دورة نوم مدتها ٩٠ دقيقة):</string>
     <string name="cycle"> دورة </string>
     <string name="cycles"> دورات </string>
     <string name="conseil_sommeil">الاستيقاظ بين دورات النوم يمكن أن يساعدك على الشعور بنشاط أكثر مقارنة مع قطع النوم.</string>
@@ -96,7 +96,7 @@
     <string name="homme">ذكر</string>
     <string name="femme">أنثى</string>
     <string name="label_taille">الطول (سم)</string>
-    <string name="hint_taille">175</string>
+    <string name="hint_taille">١٧٥</string>
     <string name="bouton_calculer_poids">حساب الوزن المثالي</string>
     <string name="titre_resultat">وزنك المثالي</string>
     <string name="unite_kg">Kg</string>
@@ -112,14 +112,20 @@
     <string name="bmi_title">مؤشر كتلة الجسم (BMI)</string>
     <string name="bmi_description">احسب مؤشر كتلة الجسم لتحديد ما إذا كان وزنك صحيًا بالنسبة لطولك.</string>
     <string name="height_label">الطول (سم)</string>
-    <string name="height_hint">175</string>
+    <string name="height_hint">١٧٥</string>
     <string name="weight_label">الوزن (كجم)</string>
-    <string name="weight_hint">70</string>
+    <string name="weight_hint">٧٠</string>
     <string name="calculate_bmi_button">حساب مؤشر كتلة الجسم</string>
     <string name="result_title">النتيجة</string>
-    <string name="progress_scale_0">0%</string>
-    <string name="progress_scale_40">+40%</string>
+    <string name="progress_scale_0">٠%</string>
+    <string name="progress_scale_40">+٤٠%</string>
     <string name="bmi_description_info">مؤشر كتلة الجسم هو حساب بسيط يستخدم طول الشخص ووزنه. الصيغة هي BMI = كجم/م² حيث كجم هو الوزن بالكيلوغرام و م² هو الطول بالمتر المربع.</string>
+    <string name="exemple_age">مثلاً، ٣٠</string>
+    <string name="exemple_poids">مثلاً، ٧٠</string>
+    <string name="exemple_taille">مثلاً، ١٧٥</string>
+    <string name="exemple_Tour_de_cou">مثلاً، ٣٦</string>
+    <string name="exemple_taille_ceinture">مثلاً، ٨٠</string>
+    <string name="exemple_Tour_de_hanche">مثلاً، ٩٥</string>
 
     <string name="underweight">نقص الوزن</string>
     <string name="normal_weight">وزن طبيعي</string>

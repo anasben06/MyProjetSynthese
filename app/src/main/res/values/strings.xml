@@ -59,7 +59,13 @@
     <string name="neck_circumference">Neck Circumference (cm)</string>
     <string name="waist_circumference">Waist Circumference (cm)</string>
     <string name="hip_circumference">Hip Circumference (cm)</string>
-    <string name="calculate_fat_percentage">Calculate Fat Percentage</string>
+    <string name="calculate_fat_percentage">Calculate Body Fat Percentage</string>
+    <string name="exemple_age">e.g., 30</string>
+    <string name="exemple_poids">e.g., 70</string>
+    <string name="exemple_taille">e.g., 175</string>
+    <string name="exemple_Tour_de_cou">e.g., 36</string>
+    <string name="exemple_taille_ceinture">e.g., 80</string>
+    <string name="exemple_Tour_de_hanche">e.g., 95</string>
 
     <string name="erreur_cou_requis">Please enter the neck circumference</string>
     <string name="erreur_ceinture_requise">Please enter the waist circumference</string>
@@ -114,4 +120,5 @@
     <string name="normal_weight">Normal Weight</string>
     <string name="overweight">Overweight</string>
     <string name="obesity">Obesity</string>
+
 </resources>

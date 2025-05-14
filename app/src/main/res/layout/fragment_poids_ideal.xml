@@ -86,7 +86,7 @@
                 android:layout_height="48dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/input_background"
-                android:hint="175"
+                android:hint="@string/exemple_taille"
                 android:inputType="number"
                 android:padding="12dp" />
 

@@ -56,7 +56,7 @@
                 android:id="@+id/etTaille_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="175"
+                android:hint="@string/exemple_taille"
                 android:inputType="number"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -74,7 +74,7 @@
                 android:id="@+id/etPoids_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="70"
+                android:hint="@string/exemple_poids"
                 android:inputType="numberDecimal"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -197,14 +197,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="0%" />
+                    android:text="@string/progress_scale_0" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="textEnd"
-                    android:text="+40%" />
+                    android:text="@string/progress_scale_40" />
             </LinearLayout>
 
             <!-- Description -->

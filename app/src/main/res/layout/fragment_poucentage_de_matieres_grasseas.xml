@@ -86,7 +86,7 @@
                 android:id="@+id/etAge_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="e.g., 30"
+                android:hint="@string/exemple_age"
                 android:inputType="number"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -104,7 +104,7 @@
                 android:id="@+id/etPoids_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="e.g., 70"
+                android:hint="@string/exemple_poids"
                 android:inputType="numberDecimal"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -122,7 +122,7 @@
                 android:id="@+id/etTaille_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="e.g., 175"
+                android:hint="@string/exemple_taille"
                 android:inputType="numberDecimal"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -140,7 +140,7 @@
                 android:id="@+id/etCou_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="e.g., 36"
+                android:hint="@string/exemple_Tour_de_cou"
                 android:inputType="numberDecimal"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -158,7 +158,7 @@
                 android:id="@+id/etTailleCeinture_fragment"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:hint="e.g., 80"
+                android:hint="@string/exemple_taille_ceinture"
                 android:inputType="numberDecimal"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -178,7 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:visibility="gone"
-                android:hint="e.g., 95"
+                android:hint="@string/exemple_Tour_de_hanche"
                 android:inputType="numberDecimal"
                 android:background="@drawable/input_background"
                 android:padding="12dp" />
@@ -284,14 +284,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="0%" />
+                    android:text="@string/progress_scale_0" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textAlignment="textEnd"
-                    android:text="+40%" />
+                    android:text="@string/progress_scale_40" />
             </LinearLayout>
             <!-- Description -->
             <TextView
